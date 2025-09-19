@@ -1,39 +1,46 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
   background: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
 header {
-  background: #ff914d;
+  background: #4CAF50;
   color: white;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
-nav ul li {
-  margin: 5px 10px;
-}
-
-nav ul li a {
-  color: white;
+nav a {
   text-decoration: none;
-  font-weight: bold;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
-nav ul li a.active, nav ul li a:hover {
-  text-decoration: underline;
+nav a:hover,
+nav a.active {
+  background: #388e3c;
 }
 
 main {
@@ -42,43 +49,65 @@ main {
   margin: auto;
 }
 
-section {
-  margin-bottom: 20px;
-  padding: 15px;
-  background: white;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.hero {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background: #388e3c;
+}
+
+.gallery {
+  margin-top: 40px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
 }
 
 footer {
   background: #333;
   color: white;
   text-align: center;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 15px;
+  margin-top: 40px;
+  position: relative;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-form input, form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-form button {
-  background: #ff914d;
-  color: white;
-  padding: 10px;
+#backToTop {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #4CAF50;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  color: white;
   cursor: pointer;
 }
 
-form button:hover {
-  background: #e6733c;
+#backToTop:hover {
+  background: #388e3c;
 }

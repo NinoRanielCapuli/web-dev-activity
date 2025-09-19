@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Contact Pet Care 101 for inquiries, feedback, or pet-related questions.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Pet Care 101</title>
   <link rel="stylesheet" href="../css/styles.css">
-  <script src="../js/script.js" defer></script>
+  <script defer src="../js/script.js"></script>
 </head>
 <body>
   <header>
-    <h1>Contact Us</h1>
+    <h1>🐾 Pet Care 101</h1>
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -20,24 +21,28 @@
   </header>
 
   <main>
-    <h2>Get in Touch</h2>
-    <form id="contactForm">
-      <label>Name:</label>
-      <input type="text" name="name" required>
-      
-      <label>Email:</label>
-      <input type="email" name="email" required>
-      
-      <label>Message:</label>
-      <textarea name="message" rows="5" required></textarea>
-      
-      <button type="submit">Send</button>
-    </form>
-    <p id="formMessage"></p>
+    <section>
+      <h2>Contact Us</h2>
+      <p>If you have questions, suggestions, or feedback, feel free to reach out. While this contact form does not submit to a real server, it shows how users can share their messages.</p>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <img src="../images/contact.jpg" alt="Person using laptop to send message">
   </main>
 
   <footer>
-    <p>&copy; 2025 Pet Care 101 | All Rights Reserved</p>
+    <p>© 2025 Pet Care 101 | Learning Project</p>
+    <button id="backToTop">⬆ Back to Top</button>
   </footer>
 </body>
 </html>

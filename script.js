@@ -1,12 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("contactForm");
-  const msg = document.getElementById("formMessage");
-
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      msg.textContent = "✅ Thanks! Your message has been sent.";
-      form.reset();
+  const backToTop = document.getElementById("backToTop");
+  if (backToTop) {
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
+
+  const questions = document.querySelectorAll(".faq-question");
+  questions.forEach(q => {
+    q.addEventListener("click", () => {
+      q.nextElementSibling.classList.toggle("show");
+    });
+  });
 });

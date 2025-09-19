@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Pet Care 101 Philippines: Your complete guide to caring for dogs and cats with Filipino context.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pet Care 101: Beginner’s guide to dog and cat care, including feeding, training, grooming, health, and adoption tips.">
   <title>Pet Care 101 - Home</title>
   <link rel="stylesheet" href="css/styles.css">
   <script defer src="js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Pet Care 101</h1>
-    <nav>
+  <header class="hero-banner" style="background-image: url('images/home-banner.jpg');">
+    <div class="overlay">
+      <h1>🐾 Pet Care 101 Philippines</h1>
+      <p>Helping Pinoy pet owners raise happy, healthy dogs and cats.</p>
+    </div>
+    <nav class="navbar">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="pages/about.html">About</a></li>
-        <li><a href="pages/dog-training.html">Training</a></li>
+        <li><a href="pages/dog-training.html">Dog Training</a></li>
         <li><a href="pages/feeding.html">Feeding</a></li>
         <li><a href="pages/grooming.html">Grooming</a></li>
         <li><a href="pages/health.html">Health</a></li>
@@ -28,27 +32,26 @@
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Welcome to Pet Care 101</h2>
-      <p>
-        Owning a pet is one of the most rewarding experiences you can have, but it comes with great responsibility. 
-        Pets are not just animals; they are loyal companions who depend on us for love, care, and safety. 
-        Pet Care 101 is designed to help both new and experienced pet owners understand the essentials of proper 
-        pet care, from feeding and grooming to training and health management.
-      </p>
-      <p>
-        On this site, you’ll find practical guides, easy-to-follow tips, and valuable resources that will help 
-        ensure your furry friends live long, healthy, and happy lives. Whether you’re raising a playful puppy, 
-        caring for a senior dog, or considering adoption, Pet Care 101 provides reliable information for every 
-        stage of pet ownership. Start exploring today and become the best pet parent you can be!
-      </p>
-      <img src="images/pet-home.jpg" alt="Happy dog and cat together">
+  <main class="content">
+    <section class="card">
+      <h2>Welcome!</h2>
+      <p>Owning a pet is one of life’s greatest joys—but it’s also a big responsibility. Here at <strong>Pet Care 101 Philippines</strong>, we help you navigate everything from proper feeding and grooming to health tips and adoption. Whether you live in a bustling Manila condo or a quiet barangay in the province, our guides are made for you.</p>
+    </section>
+
+    <section class="card">
+      <h2>Quick Resources</h2>
+      <div class="image-grid">
+        <img src="images/dog1.jpg" alt="Happy brown dog smiling">
+        <img src="images/cat1.jpg" alt="White cat stretching on a mat">
+        <img src="images/dog2.jpg" alt="Playful puppy running">
+        <img src="images/cat2.jpg" alt="Cat resting on sofa">
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Pet Care 101 | All Rights Reserved</p>
+    <p>© 2025 Pet Care 101 | Made for Pet Owners</p>
+    <button id="backToTop">⬆ Back to Top</button>
   </footer>
 </body>
 </html>
